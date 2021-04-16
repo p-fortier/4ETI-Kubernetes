@@ -1,0 +1,11 @@
+# nginx-pod.yaml
+apiVersion: v1                  
+kind: Pod
+metadata:
+  name: my-nginx
+  labels:
+    name: nginx 
+spec:
+  containers:
+  - name: nginx-container 
+    image: nginx:stable
